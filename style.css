@@ -7,7 +7,7 @@
 
 header {
     display: flex;
-    background-color: blue;
+    background-color: #0000ff85;
     height: 80px;
     color: azure;
     justify-content: space-between;
@@ -17,6 +17,7 @@ header {
 header span{
     margin-left: 20px;
     font-family: "Audiowide", sans-serif;
+    font-size: 30px;
 }
 
 header a{
@@ -26,7 +27,7 @@ header a{
 footer {
     bottom: 0;
     height: 80px;
-    background-color: cadetblue;
+    background-color: #3a6263;
     position: fixed;
     width: 100%;
     text-align: center;
@@ -47,6 +48,13 @@ a {
     padding: 0 20px;
 }
 
+.nav-links li:hover{
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #9292bb85;
+    border-radius: 30px;
+}
+
 a button {
     margin-right: 20px;
     text-decoration: none;
@@ -56,18 +64,25 @@ a button {
     padding: 10px 20px;
     border: none;
     border-radius: 60px;
+    font-weight: 700;
 }
 
 a button:hover {
     background-color: rgb(215, 215, 215);
+    color: black;
 }
 
-footer h4 {
+footer #text-footer {
     margin-top: 20px;
 }
 
 footer #icons {
-    margin-top: 5px;
+    text-decoration: none;
+    color: azure;
+}
+
+#icons svg{
+    padding: 10px;
 }
 
 .grid-container {
@@ -75,11 +90,17 @@ footer #icons {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100% 1r;
     gap: 10px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .grid-item {
    padding: 1rem; 
+}
+
+#title {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
