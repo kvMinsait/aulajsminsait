@@ -1,0 +1,68 @@
+.principal-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.caixa-input {
+    padding: 2rem;
+    margin: 1rem;
+    width: 500px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10PX;
+}
+
+.caixa-input input {
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.caixa-input input:focus {
+    border: 1px solid white;
+    outline: 1px solid rgb(127, 195, 218);
+    background-color: rgb(218, 216, 216);
+    transition: 0.2s;
+}
+
+#dialogLogin {
+    transform: translate(50%, 50%);
+    margin-top: 200px;
+    width: 700px;   
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#dialogLogin[open] {
+    animation: fadein 0.5s ease-in forwards;
+}
+
+#btnEntrar {
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+#btnEntrar:hover {
+    background-color: rgb(215, 215, 215);
+    color: black;
+}
+
+#btnFechar {
+    float: right;
+    bottom: 5px;
+    right: 10px;
+    color: red;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
